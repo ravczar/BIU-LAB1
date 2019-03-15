@@ -7,8 +7,7 @@ function ListOfPeople(){
     
     self.toTable = function(){
         var table = '<table>';
-        //table += generateTableHeader();
-        generateTableHeader();
+        table += generateTableHeader();
         for(var i =0;i<people.length;i++){
             table+=people[i].toTableRow();
         }
